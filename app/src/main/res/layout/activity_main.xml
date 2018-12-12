@@ -6,26 +6,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="@dimen/small"
         tools:context=".MainActivity">
 
-    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"/>
-    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/num1"
 
-<LinearLayout android:layout_width="match_parent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/num2"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:orientation="horizontal">
+              android:orientation="horizontal"
+             android:gravity="center"
+>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sum"/>
+            android:text="@string/add"
+            android:padding="@dimen/small"/>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rest"/>
+            android:text="@string/sub"
+            android:padding="@dimen/small"/>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mult"/>
+            android:text="@string/mult"
+            android:padding="@dimen/small"/>
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Div"/>
+            android:text="@string/div"
+            android:padding="@dimen/small"/>
 </LinearLayout>
 
     <TextView android:layout_width="match_parent"
@@ -33,6 +50,8 @@
               android:text="00"
               android:textSize="90sp"
               android:gravity="center"
+              android:textColor="#f00"
+              android:textStyle="bold"
     />
 
 </LinearLayout>

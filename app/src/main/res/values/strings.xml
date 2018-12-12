@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">KotlinEx</string>
+    <string name="app_name">Calculator</string>
+    <string name="add">Add</string>
+    <string name="sub">Sub</string>
+    <string name="mult">Mul</string>
+    <string name="div">Div</string>
+    <string name="num1">Number 1</string>
+    <string name="num2">Number 2</string>
 </resources>
+    <?xml version="1.0" encoding="utf-8"?>

@@ -73,3 +73,42 @@ class Conejo (val nombre:String, edad:Int):Mascota(edad, "Conejo"){
 val a= Conejo("a", 9)
 val b= Conejo("b", 2)
 val c= a+b
+
+//Bifurcaciones
+fun testif(edad:Int){
+    val mayor =if(edad<18)false else true
+    when (edad){
+        in 0..10 -> println("niño")
+        in 11..17 -> println("Joven")
+        in 18..30-> println("Adulto Joven")
+        in 31 until 40 -> println("Adulto ")
+
+    }
+    val obj:Any =10
+    when (obj){
+        is Int -> obj +10
+        is String -> obj.substring(10)
+
+    }
+    val menor = when(edad){
+        in 0..17 ->"menor"
+        else -> "Mayor"
+    }
+    for(i in 0..10){
+
+    }
+    for(i in 0 until 10){
+
+    }
+    val frutas = listOf("Manzanas", "Pera", "Tomate")
+    for (f in frutas.withIndex()){
+
+    }
+}
+
+//Arreglos y Tuplas
+val color1:Pair<Int, String> = Pair(22, "Rojo")
+val color3:Pair<Int,String> = 22 to "Rojo"
+
+val colores:List<Int> = listOf(111,11)
+val colorRes:MutableList<Int> = mutableListOf(12,212)
